@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080808"
+    android:paddingTop="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DASH"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:letterSpacing="0.1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DECIDE"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#E8263A"
+                    android:letterSpacing="0.1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your co-pilot for better pay"
+                android:textSize="14sp"
+                android:textColor="#9C9890"
+                android:textStyle="italic"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <!-- Stat cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/stat_card_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/43"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#BFFFFFFF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ORDERS ACCEPTED"
+                    android:textSize="12sp"
+                    android:textColor="#80FFFFFF"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/stat_card_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$1.98"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#BFFFFFFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AVG $/MILE"
+                    android:textSize="12sp"
+                    android:textColor="#80FFFFFF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/stat_card_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$13.98"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#BFFFFFFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AVG $/HOUR"
+                    android:textSize="12sp"
+                    android:textColor="#80FFFFFF"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/stat_card_bg">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.4 min"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#BFFFFFFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AVG WAIT TIME"
+                    android:textSize="12sp"
+                    android:textColor="#80FFFFFF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/status_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="14dp">
+            <View
+                android:id="@+id/statusDot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/circle_green"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTIVE — waiting for offers"
+                android:textSize="15sp"
+                android:textColor="#00C96B"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Criteria -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="YOUR CRITERIA"
+                android:textSize="13sp"
+                android:textColor="#4a4845"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AUTO"
+                android:textSize="13sp"
+                android:textColor="#6b6860"
+                android:layout_marginEnd="6dp"/>
+            <Switch
+                android:id="@+id/autoSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:thumbTint="#FFFFFF"
+                android:trackTint="#E8263A"/>
+        </LinearLayout>
+
+        <!-- Criteria rows -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Min $/mile ($)" android:textSize="14sp" android:textColor="#9C9890"/>
+            <EditText android:id="@+id/minDpm" android:layout_width="80dp" android:layout_height="36dp" android:hint="1.00" android:textColor="#9C9890" android:textColorHint="#449C9890" android:background="@drawable/input_bg" android:padding="6dp" android:textSize="13sp" android:gravity="end" android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/input_bg"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Min $/hour ($)" android:textSize="14sp" android:textColor="#9C9890"/>
+            <EditText android:id="@+id/minDph" android:layout_width="80dp" android:layout_height="36dp" android:hint="15.00" android:textColor="#9C9890" android:textColorHint="#449C9890" android:background="@drawable/input_bg" android:padding="6dp" android:textSize="13sp" android:gravity="end" android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/input_bg"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Min money ($)" android:textSize="14sp" android:textColor="#9C9890"/>
+            <EditText android:id="@+id/minMoney" android:layout_width="80dp" android:layout_height="36dp" android:hint="4.00" android:textColor="#9C9890" android:textColorHint="#449C9890" android:background="@drawable/input_bg" android:padding="6dp" android:textSize="13sp" android:gravity="end" android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/input_bg"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Max miles (mile)" android:textSize="14sp" android:textColor="#9C9890"/>
+            <EditText android:id="@+id/maxMiles" android:layout_width="80dp" android:layout_height="36dp" android:hint="8" android:textColor="#9C9890" android:textColorHint="#449C9890" android:background="@drawable/input_bg" android:padding="6dp" android:textSize="13sp" android:gravity="end" android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/input_bg"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="8dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Max time (min)" android:textSize="14sp" android:textColor="#9C9890"/>
+            <EditText android:id="@+id/maxTime" android:layout_width="80dp" android:layout_height="36dp" android:hint="45" android:textColor="#9C9890" android:textColorHint="#449C9890" android:background="@drawable/input_bg" android:padding="6dp" android:textSize="13sp" android:gravity="end" android:inputType="numberDecimal"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/input_bg"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingTop="8dp" android:paddingBottom="16dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Max dropoffs (#)" android:textSize="14sp" android:textColor="#9C9890"/>
+            <EditText android:id="@+id/maxDropoffs" android:layout_width="80dp" android:layout_height="36dp" android:hint="2" android:textColor="#9C9890" android:textColorHint="#449C9890" android:background="@drawable/input_bg" android:padding="6dp" android:textSize="13sp" android:gravity="end" android:inputType="number"/>
+        </LinearLayout>
+
+        <!-- Try Demo -->
+        <TextView
+            android:id="@+id/btnTryDemo"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="TRY DEMO"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/btn_demo_bg"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
